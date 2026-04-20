@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 125px 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 750px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 20px;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.outline {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+}
+
+.bold {
+  color: hsl(30, 10%, 34%);
+  font-weight: 700;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+  margin: 35px 0 24px 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 24px;
+}
+
+.section-two {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(330, 100%, 98%);
+}
+
+ul li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+ul,
+ol {
+  padding: 5px 15px;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.preparation-guide {
+  line-height: 1.6;
+}
+
+.recipe,
+.preparation-guide {
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid hsl(30, 54%, 90%);
+  margin-bottom: 25px;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table td {
+  padding: 12px 32px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-table tr:last-child td {
+  border-bottom: none;
+}
+
+.nutrition-table td:last-child {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .wrapper {
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .content {
+    padding: 0 32px 32px;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
